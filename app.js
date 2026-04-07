@@ -13,7 +13,7 @@ app.use(express.json());
 app.use("/api/session",sessionRoutes)
 
 app.get('/',(req,res)=>{
-    res.json(200),json({
+    res.status(200).json({
         message : "Backend running successfully!"
     });
 });
